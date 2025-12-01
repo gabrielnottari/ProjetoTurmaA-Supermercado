@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido único</title>
+    <link rel="stylesheet" href="/public/css/confirmpag.css">
+    <script src="/public/script/unico.js"></script>
+    <link rel="stylesheet" href="/confirmpag.css">
+</head>
+
+<body>
+
+    <!--Pesquisa e menu-->
+    <div class="TopoInfo">
+
+         <!--redireciona pra pag inicial-->
+         <div class="LogoPag">
+            <a href="#" class="Logosid">
+            <span class="logo"><img src="/public/img/Logo.svg"></span> </a>
+         </div>
+
+        <div class="pesquisar">
+            <input type="text" class="txtPesquisar">
+            <span class="lupa"><img src="/public/img/lupa.png"></span>
+        </div>
+
+        <nav class="menu">
+            <a href="#" class="BtnMenu P">Perfil
+                <span class="icon"><img src="/public/img/Usuario.png"></span> </a>
+
+            <a href="#" class="BtnMenu F">Favoritos
+                <span class="icon"><img src="/public/img/Favoritos.png"></span> </a>
+
+            <a href="#" class="BtnMenu E">Entrega
+                <span class="icon"><img src="/public/img/Entrega.png"></span> </a>
+
+            <a href="#" class="BtnMenu C">Carrinho
+                <span class="icon"><img src="/public/img/Carrinho.png"></span> </a>
+        </nav>
+    </div>
+
+   <!--cabeçalho -->
+
+   <div class="successo">
+    <span class="icon">✔</span>
+</div>
+
+<div class="Container">
+    <div class="titulo">
+    <p>PEDIDO CONFIRMADO</p>
+    </div>
+
+<div class="escrita"><p>Obrigado, {{Usuario}}. Seu pagamento foi
+     aprovado e o pedido já está sendo preparado</p></div>
+<div class="info-grid">
+
+    <div class="info">
+        <span class="label">Data do pedido</span>
+        <span class="value">{{datapedi}}</span>
+    </div>
+
+    <div class="info">
+        <span class="label">Data de envio</span>
+        <span class="value">{{dataenv}}</span>
+    </div>
+
+    <div class="info">
+        <span class="label">Status de pagamento</span>
+        <span class="value">Aprovado</span>
+    </div>
+
+    <div class="info">
+        <span class="label">Código de pagamento</span>
+        <span class="value">{{codpag}}</span>
+    </div>
+
+</div>
+
+<div class="subtitulo">Você pode acompanhar o seu pedido clicando em “meus pedidos”
+     ou voltar para a pagina principal clicando em “voltar”</div>
+
+<div class="botao1">
+    <button>Meu pedido</button>
+</div>
+<div class="botao2"><button>Voltar</button></div>
+</div>
+
+
+</div>
